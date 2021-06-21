@@ -153,7 +153,7 @@
 	}
 	#logo{						
 			position:fixed;
-			height: 30vh;
+			height: 20vh;
 			width: auto;
 			left: 50%;
 		    transform: translate(-50%,-25%);
@@ -252,7 +252,7 @@
 
 </div>
 <div id = "splashContainer"  onclick ="splash()">
-	<img id ="splash" img src ="media/splash.png" onclick="PlayMusic('music')">
+	<img id ="splash" img src ="media/splash.png" onclick="PlayMusic('music');PlayVideo('backgroundVideo');">
 </div>
 
 		<div id ="checkoutSummary">
@@ -270,7 +270,7 @@
 		<div id = "backgroundContainer">
 
 
-			<video id ="backgroundVideo" muted autoplay loop playsinline>
+			<video id ="backgroundVideo" muted loop>
 				<source src="media/Drift01-1.mp4" type="video/mp4">
 			</video>
 
@@ -372,6 +372,11 @@ function PlayMusic(soundobj) {
     var thissound=document.getElementById(soundobj);
     thissound.play();
 }
+function PlayVideo(videoobj) {
+    var thisvideo=document.getElementById(videoobj);
+    thisvideo.play();
+}
+
 
 	</script>
 </html>
