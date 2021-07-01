@@ -26,22 +26,43 @@
 		bottom:0;
 		background-color:white;
 		display:block;
+		z-index:7;
 	}
 	#aboutContainer{
-	position:absolute;
-		height:100%;
-		width:100%;
-		left:0;
-		top:0;
-		bottom:0;
-		background-color:none;
-		display:none;
+	display:none;
+		min-width: 90vw; 
+		min-height: 100vh;
+		max-height:200vh;
+		width: auto;
+		height: auto;
+		position: fixed;
+		left: 50%;
+		top:0px;
+		transform: translate(-50%);
+		overflow: scroll;
+		overflow-x: hidden;
+		z-index:5;			
 	}	
-	#aboutIcon{
-		position:absolute;
-		right:0;
-		height:15vh;
-		width:auto;
+	aContainer{
+		left: 50%;		
+		transform: translate(-50%);	
+		min-width: 90vw; 		
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		position: absolute;
+		text-align:center;		
+	}
+
+#aboutIcon {
+
+    float: right;
+    display: block;
+    position: relative;
+    right: 0;
+    height: auto;
+    width: 10vw;
+    z-index: 6;
 	}
 	#aboutIcon:hover{
 		 -webkit-transform: scaleX(-1);
@@ -49,12 +70,39 @@
 
 }
 	#about{
-	position:fixed;
-		left:50%;
+			position:absolute;
+			z-index:0;
+			left:-150px;
+			min-width: 115%;
+			min-height: 100%;	
+			object-fit: cover;
+			text-align:center;
+	}	
+	.aboutText{
+		position:absolute;
+		color:white;
+		z-index:5;
+		padding:5% 20% 20% 20%;
+		font-size:2.5vw;
+	}
+	#aboutHeader{
+
+		position:sticky;
+		z-index:5;
+		width:30%;
+		height:auto;
+				left: 50%;
 		transform: translate(-50%);
-		height:100vh;
-		width:auto;
-		overflow:hidden;
+		padding-top:10%;
+	}	
+	#Socials{
+		text-align:left;
+	}
+	#instagramIcon{
+		height:25px;
+		width:25px;
+		position: relative;
+		top:6px;
 	}	
 	#splash{
 	position:fixed;
@@ -63,6 +111,21 @@
 		height:100vh;
 		width:auto;
 	}	
+	#lookbookIcon{
+		height:auto;
+		width:10vw;
+		float:right;
+		display:block;
+		position:relative;
+		z-index:6;
+		transform: scaleX(-1);
+	}
+	#nav{
+		position:absolute;
+		right:0;
+		width:10px;
+	
+	}
 	#backgroundContainer{
 		position: fixed;
 		left:0;
@@ -121,7 +184,35 @@
 		width: auto;
 		left: 50%;
 	}
-
+	#shirtPreview:hover{
+		opacity:0.5;
+	
+	}
+	#shirtHover{
+		display:inline-block;
+		width:auto;
+		height:auto;
+		float:center;
+	
+	}
+	#shirtHover:hover  #add{
+		display:block;
+		position:absolute;
+	
+	}
+	#add{
+		position:absolute;
+		display:none;
+		width:50px;
+		height:50px;
+		background-color:red;
+		z-index:9;
+		margin-left:35%;
+		margin-top:25%;
+	}
+	#add:hover + #shirtPreview{
+		opacity:0.5;
+	}
 	#pageContainer::-webkit-scrollbar {
 	  display: none;
 	}	
@@ -176,7 +267,7 @@
 
 
 	.wraper {	
-	overflow: scroll;
+	overflow: hidden;
 	width: 80vw;
 	height: 90%;
 	margin-left:7%;
@@ -236,7 +327,81 @@
 		width:90vw;
 	
 	}
+	#about{
+		height:100%;
+		width:auto;
+	
+	}
+	.aboutText{
+		font-size:1em;
+		padding:0 10% 10% 10%;
+	}
+
+	#instagramIcon {
+		top: 6px;
+		height: 20px;
+		width: 20px;
+		position: relative;
+	}	
+	#lookbookIcon{
+		height:auto;
+		width:15vw;
+		float:right;
+		display:block;
+		position:relative;
+		
+
+	}	
 }
+
+@media only screen 
+and (max-width:900px)
+and (orientation:landscape){
+		
+		#splash{
+			height:auto;
+			width:80%;
+		}
+	
+}
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+.close {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  z-index:8;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 40px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+
 
 	</style>
 
@@ -246,10 +411,34 @@
 <audio id = "music">
 	<source src="media/Aquarius - Drift to the Centre (320 kbps).mp3"></source>
 </audio>
+<div id ="nav">
 	<img id ="aboutIcon" img src ="media/aboutIcon.png" onclick="about(1)">
-<div id = "aboutContainer" onclick="about(2)">
-	<img id ="about" img src ="media/aboutBackground.jpg">
+	<img id ="lookbookIcon" img src ="media/thumbnail_Look book icon.png" >
 
+</div>
+
+<div id = "aboutContainer" ">
+
+<a href="#" class="close" onclick ="about(2)"></a>
+	<div id ="aContainer">
+	<img id ="aboutHeader" img src ="media/thumbnail_Star logo.png">
+	<div class ="aboutText">
+		<p align="left">Growing up in Tokyo gave me a somewhat dark and weird mentality. I was born in a suburban area, being stuck in the concrete jungle boosted me to explore Tokyo more. </p>
+		<p align="left">I was fascinated by the weirdly americanised Japanese subculture of ura-Harajuku. This fascination was aided by inspiration from what was happening around me; violence in school, teenage suicide, hikikomori, post biker gang groups and drugs. These inspirations gave me a radical taste that later directed my interested towards the Japanese avant-garde movement from the 50’s ~ 70’s.</p>
+		<p align="left">While I was struggling to start creative work, I found ‘Star’ a short story by Yukio Mishima, about a popular young actor that struggles with fame and the anxieties that come with such a profession. The story reminded me of how rediculously important it is to be seen in a good career and public image by others in Japanese society. Star’s logo is a homage to a cover of this story. I created Star for people to enjoy my satirical and ironic graphics</p>
+
+			<div id ="Socials">
+			<img id ="instagramIcon" img src = "media/instagram.png"</>
+			<a href="https://www.instagram.com/star___jp/"target="_blank" rel="noopener noreferrer">@star___jp </a>
+			<a href="https://www.instagram.com/shimpei_1102/"target="_blank" rel="noopener noreferrer">@shimpei_m1102</a>
+			<p>Email: starjapan42@gmail.com</p>
+			
+		</div>
+
+	</div>
+
+	<img id ="about" img src ="media/thumbnail_About image.png">
+	</div>
 </div>
 <div id = "splashContainer"  onclick ="splash()">
 	<img id ="splash" img src ="media/splash.png" onclick="PlayMusic('music');PlayVideo('backgroundVideo');">
@@ -278,8 +467,30 @@
 		</div>	
 		<div id ="productContainer">
 			<div id = "page">
-				<img id = "shirtPreview" img src ="media/White oval tee.png" onclick="product()">
+
+				<div id ="shirtHover">
+				<div id ="add">
+				<button class="snipcart-add-item" 
+				  data-item-id="OG Star Tee (White/Black)"
+				  data-item-price="25.00"
+				  data-item-url="portfolio-matthewkelly-do2qs.ondigitalocean.app"
+				  data-item-description="OG Star Tee (White/Black)"
+				  data-item-image="media/tstar01.png"
+				  data-item-name="OG Star Tee (White/Black)"
+				  data-item-custom1-name="Size"
+				  data-item-custom1-options="Small|Medium|Large|Extra Large"
+				  data-item-custom1-value="Small" onclick="showCart()" >
+				  Add to cart
+				</button>
+				  
+				  
 				
+				</div>
+				<img id = "shirtPreview" img src ="media/White oval tee.png" onclick="product()">
+				</div>
+	
+				
+			
 				<img id = "shirtPreview" img src ="media/White star tee.png">
 				
 				<img id = "shirtPreview" img src ="media/Navy oval tee.png">
@@ -312,7 +523,7 @@
 				<button class="snipcart-add-item"
 				  data-item-id="OG Star Tee (White/Black)"
 				  data-item-price="25.00"
-				  data-item-url="/paintings/starry-night"
+				  data-item-url="portfolio-matthewkelly-do2qs.ondigitalocean.app"
 				  data-item-description="OG Star Tee (White/Black)"
 				  data-item-image="media/tstar01.png"
 				  data-item-name="OG Star Tee (White/Black)"
@@ -331,7 +542,15 @@
 
 	</body>
 	<script>
-
+	var test =document.getElementsByClassName("snipcart-items-count")[0].innerHTML;
+	if(test>0)
+	{
+		document.getElementById("checkoutSummary").style="display:block;";
+		window.alert(test);
+	}else if(test==0)
+	{
+		document.getElementById("checkoutSummary").style="display:none;";
+	}
 	var str1 = document.getElementsByClassName("snipcart-add-item");
 function choice1(select) {
 	alert(str1[0].getAttribute('data-item-custom1-value'));
@@ -347,8 +566,9 @@ function showCart(){
 		window.alert(test);
 	}else if(test==0)
 	{
-		document.getElementById("checkoutSummary").style="display:block;";
+		document.getElementById("checkoutSummary").style="display:none;";
 	}
+	
 	
 }
 function product(){
