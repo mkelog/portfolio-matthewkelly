@@ -41,18 +41,9 @@
 		transform: translate(-50%);
 		overflow: scroll;
 		overflow-x: hidden;
-		z-index:5;			
+		z-index:7;			
 	}	
-	aContainer{
-		left: 50%;		
-		transform: translate(-50%);	
-		min-width: 90vw; 		
-		min-height: 100%;
-		width: auto;
-		height: auto;
-		position: absolute;
-		text-align:center;		
-	}
+
 
 #aboutIcon {
 
@@ -73,18 +64,29 @@
 	#about{
 			position:absolute;
 			z-index:0;
-			left:-150px;
+			left: 50%;		
+			transform: translate(-50%);	
 			min-width: 115%;
 			min-height: 100%;	
 			object-fit: cover;
 			text-align:center;
 	}	
+		#aContainer{
+		left: 50%;		
+		transform: translate(-50%);	
+		min-width: 90vw; 		
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		position: absolute;
+		text-align:center;
+	}
 	.aboutText{
 		position:absolute;
 		color:white;
 		z-index:5;
-		padding:5% 20% 20% 20%;
-		font-size:2.5vw;
+		padding:5% 10% 10% 10%;
+		font-size:3vw;
 	}
 	#aboutHeader{
 
@@ -92,12 +94,12 @@
 		z-index:5;
 		width:30%;
 		height:auto;
-				left: 50%;
-		transform: translate(-50%);
+
+
 		padding-top:10%;
 	}	
 	#Socials{
-		text-align:left;
+		text-align:center;
 	}
 	#instagramIcon{
 		height:25px;
@@ -149,7 +151,7 @@
 		z-index:-2;		
 	}
 	
-	#pageContainer{
+	.pageContainer{
 		min-width: 90vw; 
 		min-height: 100vh;
 		max-height:200vh;
@@ -161,9 +163,16 @@
 		transform: translate(-50%);
 		overflow: scroll;
 		overflow-x: hidden;
-		z-index:5;	
+		z-index:6;	
 		display:none;		
 	}
+
+	#imagePreviews{
+		width:90vw;
+		height:80vh;
+	
+	}
+
 		#productContainer{
 		min-width: 90vw; 
 		min-height: 85vh;
@@ -232,7 +241,9 @@
 	#productDetailImg{
 			position:absolute;
 			z-index:0;
-			left:-150px;
+			left: 50%;		
+			transform: translate(-50%);	
+
 			min-width: 115%;
 			min-height: 100%;	
 			object-fit: cover;
@@ -240,9 +251,9 @@
 	}
 	#sizeGuide{						
 			position:relative;
-			transition: transform .2s;
+
 			max-width: 75vw;			
-			margin-top:20%;
+
 	}
 	#logo{						
 			position:fixed;
@@ -273,7 +284,9 @@
 	width: 50%;
 	height: auto;
 	margin-left:7%;
-	margin-top:10%;
+	margin-top:5%;
+	display:inline-block;
+	
 	}
 
 	.zoom_area {
@@ -301,8 +314,23 @@
 	left: -50%;	
 	display: none;
 	}
-
-
+	#imageSelection{
+	float:right;
+    display:inline-block;
+    position: relative;
+    right: 5%;
+    top: 30%;
+	
+	}
+	.alternateImage{
+	background-color: white;
+		width: 7.5vw;
+		height: auto;
+		outline: 3px solid #ffffff;		
+	}
+	.alternateImage:hover {
+		opacity: 0.5;
+	}
 	#select-size{
 	position:relative;
 	height:100%;
@@ -329,14 +357,10 @@
 		width:90vw;
 	
 	}
-	#about{
-		height:100%;
-		width:auto;
-	
-	}
+
 	.aboutText{
-		font-size:1em;
-		padding:0 10% 10% 10%;
+		font-size:2vh;
+
 	}
 
 	#instagramIcon {
@@ -356,6 +380,18 @@
 	}	
 	.wraper{
 		width:90%;
+		margin-left:0;
+		margin-top:0;
+	
+	}
+	#imageSelection{
+		display:block;
+		top:unset;
+		right:unset;
+		float:none;
+	}
+	#alternateImage{
+		width:10vw;
 	
 	}
 }
@@ -383,7 +419,7 @@ a:visited {
 }
 .close {
   position: absolute;
-  right: 10%;
+  right: 5%;
   top: 5%;
   width: 32px;
   height: 32px;
@@ -399,7 +435,7 @@ a:visited {
   content: ' ';
   height: 40px;
   width: 2px;
-  background-color: #333;
+  background-color: red;
 }
 .close:before {
   transform: rotate(45deg);
@@ -415,7 +451,7 @@ a:visited {
 	<body>
 <script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
 <div id="snipcart" data-config-modal-style="side" data-api-key="NzU4YzA5NmYtODE0Yi00OWVlLTlhOTMtYWYyYzJiYWRiZjc2NjM3NDkwMTE3OTQyNTM2NzUz" hidden></div>	
-<audio id = "music">
+<audio id = "music" autoplay loop>
 	<source src="media/Aquarius - Drift to the Centre (320 kbps).mp3"></source>
 </audio>
 <div id ="nav">
@@ -430,9 +466,9 @@ a:visited {
 	<div id ="aContainer">
 	<img id ="aboutHeader" img src ="media/thumbnail_Star logo.png">
 	<div class ="aboutText">
-		<p align="left">I was born in a suburban area of Tokyo, being stuck in the concrete jungle boosted me to explore Tokyo more.  </p>
-		<p align="left">I was fascinated by the weirdly americanised Japanese subculture of ura-Harajuku. This fascination was aided by inspiration from what was happening around my generation ; violence in school, teenage suicide, hikikomori and post biker gang groups. These inspirations gave me a radical taste that later directed my interest towards the Japanese avant-garde movement from the 50’s ~ 70’s.</p>
-		<p align="left">While I was struggling to start creative work, I found ‘Star’ a short story by Yukio Mishima, about a popular young actor that struggles with fame and the anxieties that come with such a profession. The story reminded me of how ridiculously important it is to be seen in a good career and public image by others in Japanese society. Star’s logo is a homage to a cover of this story. I created Star for people to enjoy my satirical and ironic graphics.</p>
+		<p align="center">I was born in a suburban area of Tokyo, being stuck in the concrete jungle boosted me to explore Tokyo more.  </p>
+		<p align="center">I was fascinated by the weirdly americanised Japanese subculture of ura-Harajuku. This fascination was aided by inspiration from what was happening around my generation ; violence in school, teenage suicide, hikikomori and post biker gang groups. These inspirations gave me a radical taste that later directed my interest towards the Japanese avant-garde movement from the 50’s ~ 70’s.</p>
+		<p align="center">While I was struggling to start creative work, I found ‘Star’ a short story by Yukio Mishima, about a popular young actor that struggles with fame and the anxieties that come with such a profession. The story reminded me of how ridiculously important it is to be seen in a good career and public image by others in Japanese society. Star’s logo is a homage to a cover of this story. I created Star for people to enjoy my satirical and ironic graphics.</p>
 
 			<div id ="Socials">
 			<img id ="instagramIcon" img src = "media/instagram.png"</>
@@ -444,8 +480,9 @@ a:visited {
 
 	</div>
 
-	<img id ="about" img src ="media/thumbnail_About image.png">
+	<img id ="about" img src ="media/thumbnail_About image.png">	
 	</div>
+
 </div>
 <div id = "splashContainer"  onclick ="splash()">
 	<img id ="splash" img src ="media/splash.png" onclick="PlayMusic('music');PlayVideo('backgroundVideo');">
@@ -493,32 +530,100 @@ a:visited {
 				  
 				
 				</div>
-				<img id = "shirtPreview" img src ="media/White oval tee.png" onclick="product()">
+				<img id = "shirtPreview" img src ="media/White oval tee.png" onclick="product(1)">
 				</div>
+				
+				<div id ="shirtHover">
+				<div id ="add">
+				<button class="snipcart-add-item" 
+				  data-item-id="OG Star Tee (White/Black)"
+				  data-item-price="0.01"
+				  data-item-url="portfolio-matthewkelly-do2qs.ondigitalocean.app"
+				  data-item-description="OG Star Tee (White/Black)"
+				  data-item-image="media/tstar01.png"
+				  data-item-name="OG Star Tee (White/Black)"
+				  data-item-custom1-name="Size"
+				  data-item-custom1-options="Small|Medium|Large|Extra Large"
+				  data-item-custom1-value="Small" onclick="showCart()" >
+				  Add to cart
+				</button>
+				  
+				  
+				
+				</div>
+				<img id = "shirtPreview" img src ="media/White star tee.png" onclick="product(2)">
+				</div>
+				
+				<div id ="shirtHover">
+				<div id ="add">
+				<button class="snipcart-add-item" 
+				  data-item-id="OG Star Tee (White/Black)"
+				  data-item-price="0.01"
+				  data-item-url="portfolio-matthewkelly-do2qs.ondigitalocean.app"
+				  data-item-description="OG Star Tee (White/Black)"
+				  data-item-image="media/tstar01.png"
+				  data-item-name="OG Star Tee (White/Black)"
+				  data-item-custom1-name="Size"
+				  data-item-custom1-options="Small|Medium|Large|Extra Large"
+				  data-item-custom1-value="Small" onclick="showCart()" >
+				  Add to cart
+				</button>
+				  
+				  
+				
+				</div>
+				<img id = "shirtPreview" img src ="media/Navy oval tee.png" onclick="product(3)">
+				</div>
+				<div id ="shirtHover">
+				<div id ="add">
+				<button class="snipcart-add-item" 
+				  data-item-id="OG Star Tee (White/Black)"
+				  data-item-price="0.01"
+				  data-item-url="portfolio-matthewkelly-do2qs.ondigitalocean.app"
+				  data-item-description="OG Star Tee (White/Black)"
+				  data-item-image="media/tstar01.png"
+				  data-item-name="OG Star Tee (White/Black)"
+				  data-item-custom1-name="Size"
+				  data-item-custom1-options="Small|Medium|Large|Extra Large"
+				  data-item-custom1-value="Small" onclick="showCart()" >
+				  Add to cart
+				</button>
+				  
+				  
+				
+				</div>
+				<img id = "shirtPreview" img src ="media/Navy star tee.png" onclick="product(4)">
+				</div>				
 	
 				
 			
-				<img id = "shirtPreview" img src ="media/White star tee.png">
 				
-				<img id = "shirtPreview" img src ="media/Navy oval tee.png">
+
 				
-				<img id = "shirtPreview" img src ="media/Navy star tee.png">
+
 				
 			</div>
 		</div>
 
-			<div id = "pageContainer">
-
+			<div class = "pageContainer" id="pageContainer1">
+	<a href="#" class="close" onclick ="about(3)"></a>
 				<div id = "page">
 
 				<img id="productDetailImg" img src="media/product.png" >
-				<div class="wraper">
-					<div class="zoom_area">
-						<div class="preview">
-							<img src="media/tstar01.png" alt="">
+				<div id = "imagePreviews">
+					<div class="wraper">
+						<div class="zoom_area">
+							<div class="preview">
+								<img id ="whiteOvalPreview" src="media/White oval tee.png" alt="">
+							</div>
 						</div>
-					</div>
-				</div>	
+					</div>	
+					<div id ="imageSelection">
+						<img class="alternateImage"  id = "alternateImage1" img src ="media/White oval tee.png" onclick="alternateImage(this)" >
+						<img class="alternateImage"  id = "alternateImage2" img src ="media/White oval close up.png" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagWhite.png" onclick="alternateImage(this)">
+					</div>				
+
 				<div id = "buttons">
 				<select id="select-size" onchange="choice1(this)">
 					<option value="1">Small</option>
@@ -540,12 +645,18 @@ a:visited {
 				  Add to cart
 				</button>
 			</div>	
+				<img id="sizeGuide" img src="media/sizeGuide.jpg" >			
+				</div>
+
+
 			
-				<img id="sizeGuide" img src="media/sizeGuide.jpg" >
+
 				
 			</div>
 			
 			</div>
+			
+			
 
 	</body>
 	<script>
@@ -578,8 +689,37 @@ function showCart(){
 	
 	
 }
-function product(){
-	document.getElementById("pageContainer").style="display:block;";
+function product(shirt){
+if (shirt==1)
+{
+			document.getElementById("pageContainer1").style="display:block;";
+			document.getElementById("whiteOvalPreview").src="media/White oval tee.png";
+			document.getElementById("alternateImage1").src="media/White oval tee.png";
+			document.getElementById("alternateImage2").src="media/White oval close up.png";
+			document.getElementById("alternateImage3").src="media/tagWhite.png";			
+}
+if(shirt==2){
+			document.getElementById("pageContainer1").style="display:block;";
+			document.getElementById("whiteOvalPreview").src="media/White star tee.png";
+			document.getElementById("alternateImage1").src="media/White star tee.png";
+			document.getElementById("alternateImage2").src="media/White star close up.png";
+			document.getElementById("alternateImage3").src="media/tagWhite.png";
+}
+if(shirt==3){
+			document.getElementById("pageContainer1").style="display:block;";
+			document.getElementById("whiteOvalPreview").src="media/Navy oval tee.png";
+			document.getElementById("alternateImage1").src="media/Navy oval tee.png";
+			document.getElementById("alternateImage2").src="media/Navy oval close up.png";
+			document.getElementById("alternateImage3").src="media/tagNavy.png";
+}
+if(shirt==4){
+			document.getElementById("pageContainer1").style="display:block;";
+			document.getElementById("whiteOvalPreview").src="media/Navy star tee.png";
+			document.getElementById("alternateImage1").src="media/Navy star tee.png";
+			document.getElementById("alternateImage2").src="media/Navy star close up.png";
+			document.getElementById("alternateImage3").src="media/tagNavy.png";
+}
+
 }
 function splash(){
 	document.getElementById("splashContainer").style="display:none;";
@@ -593,7 +733,10 @@ function about(openClose){
 	{
 		document.getElementById("aboutContainer").style="display:none;";
 	}
-
+	if(openClose==3)
+	{
+		document.getElementById("pageContainer1").style="display:none;";
+	}
 }
 function PlayMusic(soundobj) {
     var thissound=document.getElementById(soundobj);
@@ -614,6 +757,10 @@ $('body').on('click touchstart', function () {
                 videoElement.play();
             }
     });
-
+function alternateImage(clicked){
+	var OG = document.getElementById("whiteOvalPreview");
+	var New = clicked;
+	OG.src=New.src;
+}
 	</script>
 </html>
