@@ -252,7 +252,9 @@
 	}
 	#sizeGuide{						
 		position:relative;
-		max-width: 75vw;			
+		max-width: 75vw;	
+    margin-top: 25px;
+
 	}
 	#logo{						
 		position:fixed;
@@ -573,7 +575,33 @@ and (orientation:landscape){
 		}
 	
 }
+@font-face {
+  font-family: "myFont";
+  src: url("JBLACK.TTF");
 
+}
+#disclaimer p{
+	margin-top: 25px;
+	transform: translate(-50%);
+	align-content: center;
+	text-align: left;
+	width: fit-content;
+	left: 50%;
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: myFont;
+	padding-top: 5px;
+	padding-bottom: 1px;
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-size:2vw;
+}
+@media (max-width:800px){
+	#disclaimer p{
+		font-size:4vw;
+	}
+}
 
 	</style>
 
@@ -758,7 +786,7 @@ and (orientation:landscape){
 					<div class="wraper">
 						<div class="zoom_area">
 							<div class="preview">
-								<img id ="whiteOvalPreview" src="media/White-oval-tee.jpg" alt="">
+								<img id ="whiteOvalPreview" src="media/White-oval-tee.png" alt="">
 							</div>
 						</div>
 					</div>	
@@ -766,11 +794,13 @@ and (orientation:landscape){
 						<img class="alternateImage"  id = "alternateImage1" img src ="media/White-oval-tee.png" onclick="alternateImage(this)" >
 						<img class="alternateImage"  id = "alternateImage2" img src ="media/White-oval-close-up.jpg" onclick="alternateImage(this)">
 						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagWhite.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage4" img src ="media/tagWhite.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage5" img src ="media/tagWhite.jpg" onclick="alternateImage(this)">	
-							<div id = "disclaimer"
-							<p style="transform:translate(-50%);align-content: center;text-align: center;background-color:white;width:fit-content;left: 50%;position: relative;">This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
-							<p style="transform:translate(-50%);align-content: center;text-align: center;background-color:white;width:fit-content;left: 50%;position: relative;">£25.00 + Shipping: £3.00</p>																				
+						<img class="alternateImage"  id = "alternateImage4" img src ="media/WhiteOvalLook1.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage5" img src ="media/WhiteOvalLook2.jpg" onclick="alternateImage(this)">	
+							<div id = "disclaimer">
+									<p >
+										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
+									<p >
+										£25.00 + Shipping: £3.00</p>																				
 
 
 							</div>
@@ -817,19 +847,22 @@ and (orientation:landscape){
 					<div class="wraper">
 						<div class="zoom_area">
 							<div class="preview">
-								<img id ="whiteOvalPreview" src="media/White-star-tee.png" alt="">
+								<img id ="whiteOvalPreview2" src="media/White-star-tee.png" alt="">
 							</div>
 						</div>
 					</div>	
 					<div id ="imageSelection">
-						<img class="alternateImage"  id = "alternateImage1" img src ="media/White-star-tee.jpg" onclick="alternateImage(this)" >
+						<img class="alternateImage"  id = "alternateImage1" img src ="media/White-star-tee.png" onclick="alternateImage(this)" >
 						<img class="alternateImage"  id = "alternateImage2" img src ="media/White-star-close-up.jpg" onclick="alternateImage(this)">
 						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagWhite.jpg" onclick="alternateImage(this)">
 						<img class="alternateImage"  id = "alternateImage4" img src ="media/WhiteStarLook1.jpg" onclick="alternateImage(this)">
 						<img class="alternateImage"  id = "alternateImage5" img src ="media/WhiteStarLook2.jpg" onclick="alternateImage(this)">	
-							<div id = "disclaimer"
-							<p style="transform:translate(-50%);align-content: center;text-align: center;background-color:white;width:fit-content;left: 50%;position: relative;">This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
-							<p style="transform:translate(-50%);align-content: center;text-align: center;background-color:white;width:fit-content;left: 50%;position: relative;">£25.00 + Shipping: £3.00</p>																				
+							<div id = "disclaimer">
+									<p>
+										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
+									<p>
+									
+									£25.00 + Shipping: £3.00</p>																				
 
 
 							</div>
@@ -865,7 +898,129 @@ and (orientation:landscape){
 				
 			</div>
 			
-			</div>			
+			</div>	
+			<div class = "pageContainer" id="pageContainer3">
+	<a href="#" class="close" onclick ="about(3)"></a>
+				<div id = "page">
+
+				<img id="productDetailImg" img src="media/product.jpg" >
+				<div id = "imagePreviews">
+					<div class="wraper">
+						<div class="zoom_area">
+							<div class="preview">
+								<img id ="whiteOvalPreview3" src="media/Navy-oval-tee.png" alt="">
+							</div>
+						</div>
+					</div>	
+					<div id ="imageSelection">
+						<img class="alternateImage"  id = "alternateImage1" img src ="media/Navy-oval-tee.png" onclick="alternateImage(this)" >
+						<img class="alternateImage"  id = "alternateImage2" img src ="media/Navy-oval-close-up.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagNavy.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage4" img src ="media/NavyOvalLook1.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage5" img src ="media/NavyOvalLook2.jpg" onclick="alternateImage(this)">	
+							<div id = "disclaimer">
+									<p>
+										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
+									<p>
+									
+									£25.00 + Shipping: £3.00</p>																				
+
+
+							</div>
+					</div>				
+
+				<div id = "buttons">
+				<select id="select-size" onchange="choice1(this)">
+					<option value="1">Small</option>
+					<option value="2">Medium</option>
+					<option value="3">Large</option>
+					<option value="4">Extra Large</option>
+				</select>
+								
+				<button class="snipcart-add-item"
+				  data-item-id="Oval Logo Tee (Navy/White)"
+				  data-item-price="25.00"
+				  data-item-url="https://portfolio-matthewkelly-do2qs.ondigitalocean.app/"
+				  data-item-description="Oval Logo Tee (Navy/White)"
+				  data-item-image="media/Navy-oval-tee.jpg"
+				  data-item-name="Oval Logo Tee (Navy/White)"
+				  data-item-custom1-name="Size"
+				  data-item-custom1-options="Small|Medium|Large|Extra Large"
+				  data-item-custom1-value="Small" onclick="showCart()" >
+				  Add to cart
+				</button>
+			</div>	
+				<img id="sizeGuide" img src="media/sizeGuide.jpg" >			
+				</div>
+
+
+			
+
+				
+			</div>
+			
+			</div>		
+			<div class = "pageContainer" id="pageContainer4">
+	<a href="#" class="close" onclick ="about(3)"></a>
+				<div id = "page">
+
+				<img id="productDetailImg" img src="media/product.jpg" >
+				<div id = "imagePreviews">
+					<div class="wraper">
+						<div class="zoom_area">
+							<div class="preview">
+								<img id ="whiteOvalPreview4" src="media/Navy-star-tee.png" alt="">
+							</div>
+						</div>
+					</div>	
+					<div id ="imageSelection">
+						<img class="alternateImage"  id = "alternateImage1" img src ="media/Navy-star-tee.png" onclick="alternateImage(this)" >
+						<img class="alternateImage"  id = "alternateImage2" img src ="media/Navy-star-close-up.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagNavy.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage4" img src ="media/NavyStarLook1.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage5" img src ="media/NavyStarLook2.jpg" onclick="alternateImage(this)">	
+							<div id = "disclaimer">
+									<p>
+										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
+									<p>
+									
+									£25.00 + Shipping: £3.00</p>																				
+
+
+							</div>
+					</div>				
+
+				<div id = "buttons">
+				<select id="select-size" onchange="choice1(this)">
+					<option value="1">Small</option>
+					<option value="2">Medium</option>
+					<option value="3">Large</option>
+					<option value="4">Extra Large</option>
+				</select>
+								
+				<button class="snipcart-add-item"
+				  data-item-id="Star Logo Tee (Navy/White)"
+				  data-item-price="25.00"
+				  data-item-url="https://portfolio-matthewkelly-do2qs.ondigitalocean.app/"
+				  data-item-description="Star Logo Tee (Navy/White)"
+				  data-item-image="media/Navy-star-tee.jpg"
+				  data-item-name="Star Logo Tee (Navy/White)"
+				  data-item-custom1-name="Size"
+				  data-item-custom1-options="Small|Medium|Large|Extra Large"
+				  data-item-custom1-value="Small" onclick="showCart()" >
+				  Add to cart
+				</button>
+			</div>	
+				<img id="sizeGuide" img src="media/sizeGuide.jpg" >			
+				</div>
+
+
+			
+
+				
+			</div>
+			
+			</div>					
 			
 			
 
@@ -898,23 +1053,23 @@ function product(shirt){
 
 if (shirt==1)
 {
-	str1[0].setAttribute('data-item-id',"Oval Logo Tee (White/Black)");
+	/*str1[0].setAttribute('data-item-id',"Oval Logo Tee (White/Black)");
 	str1[0].setAttribute('data-item-price',"25.00");
 	str1[0].setAttribute('data-item-url',"https://portfolio-matthewkelly-do2qs.ondigitalocean.app/");
 	str1[0].setAttribute('data-item-description',"Oval Logo Tee (White/Black)");
-	str1[0].setAttribute('data-item-image',"media/White-oval-tee.jpg");
+	str1[0].setAttribute('data-item-image',"media/White-oval-tee.png");
 	str1[0].setAttribute('data-item-name',"Oval Logo Tee (White/Black)");
 	str1[0].setAttribute('data-item-custom1-name',"Size");
 	str1[0].setAttribute('data-item-custom1-options',"Small|Medium|Large|Extra Large");
-	str1[0].setAttribute('data-item-custom1-value',"Small");
+	str1[0].setAttribute('data-item-custom1-value',"Small");*/
 	
 			document.getElementById("pageContainer1").style="display:block;";
-			document.getElementById("whiteOvalPreview").src="media/White-oval-tee.jpg";
-			document.getElementById("alternateImage1").src="media/White-oval-tee.jpg";
+			/*document.getElementById("whiteOvalPreview").src="media/White-oval-tee.png";
+			document.getElementById("alternateImage1").src="media/White-oval-tee.png";
 			document.getElementById("alternateImage2").src="media/White-oval-close-up.jpg";
 			document.getElementById("alternateImage3").src="media/tagWhite.jpg";			
 			document.getElementById("alternateImage4").src="media/WhiteOvalLook1.jpg";
-			document.getElementById("alternateImage5").src="media/WhiteOvalLook2.jpg";			
+			document.getElementById("alternateImage5").src="media/WhiteOvalLook2.jpg";	*/		
 }
 if(shirt==2){
 
@@ -941,7 +1096,7 @@ if(shirt==2){
 			document.getElementById("alternateImage5").src="media/WhiteStarLook2.jpg";	*/			
 }
 if(shirt==3){
-	str1[0].setAttribute('data-item-id',"Oval Logo Tee (Navy/White)");
+	/*str1[0].setAttribute('data-item-id',"Oval Logo Tee (Navy/White)");
 	str1[0].setAttribute('data-item-price',"25.00");
 	str1[0].setAttribute('data-item-url',"index.html");
 	str1[0].setAttribute('data-item-description',"Oval Logo Tee (Navy/White)");
@@ -949,18 +1104,18 @@ if(shirt==3){
 	str1[0].setAttribute('data-item-name',"Oval Logo Tee (Navy/White)");
 	str1[0].setAttribute('data-item-custom1-name',"Size");
 	str1[0].setAttribute('data-item-custom1-options',"Small|Medium|Large|Extra Large");
-	str1[0].setAttribute('data-item-custom1-value',"Small");
+	str1[0].setAttribute('data-item-custom1-value',"Small");*/
 	
-			document.getElementById("pageContainer1").style="display:block;";
-			document.getElementById("whiteOvalPreview").src="media/Navy-oval-tee.png";
+			document.getElementById("pageContainer3").style="display:block;";
+			/*document.getElementById("whiteOvalPreview").src="media/Navy-oval-tee.png";
 			document.getElementById("alternateImage1").src="media/Navy-oval-tee.jpg";
 			document.getElementById("alternateImage2").src="media/Navy-oval-close-up.jpg";
 			document.getElementById("alternateImage3").src="media/tagNavy.jpg";
 			document.getElementById("alternateImage4").src="media/NavyOvalLook1.jpg";
-			document.getElementById("alternateImage5").src="media/NavyOvalLook2.jpg";				
+			document.getElementById("alternateImage5").src="media/NavyOvalLook2.jpg";	*/			
 }
 if(shirt==4){
-	str1[0].setAttribute('data-item-id',"Star Logo Tee (Navy/White)");
+	/*str1[0].setAttribute('data-item-id',"Star Logo Tee (Navy/White)");
 	str1[0].setAttribute('data-item-price',"25.00");
 	str1[0].setAttribute('data-item-url',"index.html");
 	str1[0].setAttribute('data-item-description',"Star Logo Tee (Navy/White)");
@@ -968,15 +1123,15 @@ if(shirt==4){
 	str1[0].setAttribute('data-item-name',"Star Logo Tee (Navy/White)");
 	str1[0].setAttribute('data-item-custom1-name',"Size");
 	str1[0].setAttribute('data-item-custom1-options',"Small|Medium|Large|Extra Large");
-	str1[0].setAttribute('data-item-custom1-value',"Small");
+	str1[0].setAttribute('data-item-custom1-value',"Small");*/
 	
-			document.getElementById("pageContainer1").style="display:block;";
-			document.getElementById("whiteOvalPreview").src="media/Navy-star-tee.png";
+			document.getElementById("pageContainer4").style="display:block;";
+			/*document.getElementById("whiteOvalPreview").src="media/Navy-star-tee.png";
 			document.getElementById("alternateImage1").src="media/Navy-star-tee.jpg";
 			document.getElementById("alternateImage2").src="media/Navy-star-close-up.jpg";
 			document.getElementById("alternateImage3").src="media/tagNavy.jpg";
 			document.getElementById("alternateImage4").src="media/NavyStarLook1.jpg";
-			document.getElementById("alternateImage5").src="media/NavyStarLook2.jpg";				
+			document.getElementById("alternateImage5").src="media/NavyStarLook2.jpg";	*/			
 }
 
 }
@@ -996,6 +1151,8 @@ function about(openClose){
 	{
 		document.getElementById("pageContainer1").style="display:none;";
 		document.getElementById("pageContainer2").style="display:none;";
+		document.getElementById("pageContainer3").style="display:none;";
+		document.getElementById("pageContainer4").style="display:none;";
 	}
 	if(openClose==4)
 	{
@@ -1063,10 +1220,37 @@ $('body').on('click touchstart', function () {
                 videoElement.play();
             }
     });
+	
 function alternateImage(clicked){
+if(document.getElementById("pageContainer1").style.display==="block")
+{
 	var OG = document.getElementById("whiteOvalPreview");
 	var New = clicked;
 	OG.src=New.src;
+
+}
+if(document.getElementById("pageContainer2").style.display==="block")
+{
+	var OG = document.getElementById("whiteOvalPreview2");
+	var New = clicked;
+	OG.src=New.src;
+
+}
+if(document.getElementById("pageContainer3").style.display==="block")
+{
+	var OG = document.getElementById("whiteOvalPreview3");
+	var New = clicked;
+	OG.src=New.src;
+
+}
+if(document.getElementById("pageContainer4").style.display==="block")
+{
+	var OG = document.getElementById("whiteOvalPreview4");
+	var New = clicked;
+	OG.src=New.src;
+
+}
+
 }
 	</script>
 </html>
