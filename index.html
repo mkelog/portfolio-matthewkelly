@@ -739,11 +739,283 @@ and (orientation:landscape){
 <audio id = "music" autoplay loop>
 	<source src="media/music.mp3"></source>
 </audio>
+<div id = "splashContainer"  onclick ="splash()">
+	<img id ="splash" img src ="media/splash.png" onclick="PlayMusic('music');PlayVideo('backgroundVideo');">
+</div>
+		<div id = "backgroundContainer">
+
+
+			<video id ="backgroundVideo" playsinline muted loop>
+				<source src="media/1440.m4v" type="video/mp4">
+			</video>
+
+			<img id ="logo" img src ="media/stargifFinished.gif">
+		</div>	
+
+		<div id ="productContainer">
+			<div id = "page">
+
+				<img id = "shirtPreview" img src ="media/White-oval-tee.png" onclick="product(1)">
+
+				<img id = "shirtPreview" img src ="media/White-star-tee.png" onclick="product(2)">
+
+				<img id = "shirtPreview" img src ="media/Navy-oval-tee.png" onclick="product(3)">
+
+				<img id = "shirtPreview" img src ="media/Navy-star-tee.png" onclick="product(4)">
+
+			</div>
+		</div>
+		
 <div id ="nav">
 	<img id ="aboutIcon" img src ="media/aboutIcon.png" onclick="about(1)">
 	<img id ="lookbookIcon" img src ="media/thumbnail_Look book icon.png" onclick="about(4)" >
 
 </div>
+
+			<div class = "pageContainer" id="pageContainer1">
+	<a href="#" class="close" onclick ="about(3)"></a>
+				<div id = "page">
+
+				<img id="productDetailImg" img src="media/product.jpg" >
+				<div id = "imagePreviews">
+					<div class="wraper">
+						<div class="zoom_area">
+							<div class="preview">
+								<img id ="whiteOvalPreview1" src="media/White-oval-tee.png" alt="">
+							</div>
+						</div>
+					</div>	
+					<div id ="imageSelection">
+						<img class="alternateImage"  id = "alternateImage1" img src ="media/White-oval-tee.png" onclick="alternateImage(this)" >
+						<img class="alternateImage"  id = "alternateImage2" img src ="media/White-oval-close-up.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagWhite.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage4" img src ="media/WhiteOvalLook1.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage5" img src ="media/WhiteOvalLook2.jpg" onclick="alternateImage(this)">	
+							<div id = "disclaimer">
+									<p >
+										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
+									<p >
+										£25.00 + Shipping: £3.00</p>																				
+
+
+							</div>
+					</div>				
+
+				<div id = "buttons">
+				<select id="select-size" onchange="choice1(this)">
+					<option value="1">Small</option>
+					<option value="2">Medium</option>
+					<option value="3">Large</option>
+					<option value="4">Extra Large</option>
+				</select>
+								
+				<button class="snipcart-add-item"
+				  data-item-id="Oval Logo Tee (White/Black)"
+				  data-item-price="25.00"
+				  data-item-url="https://www.starcorpjp.com/"
+				  data-item-description="Oval Logo Tee (White/Black)"
+				  data-item-image="media/White-oval-tee.jpg"
+				  data-item-name="Oval Logo Tee (White/Black)"
+				  data-item-custom1-name="Size"
+				  data-item-custom1-options="Small|Medium|Large|Extra Large"
+				  data-item-custom1-value="Small" onclick="showCart()" >
+				  Add to cart
+				</button>
+			</div>	
+				<img id="sizeGuide" img src="media/sizeGuide.jpg" >			
+				</div>
+
+
+			
+
+				
+			</div>
+			
+			</div>
+
+			<div class = "pageContainer" id="pageContainer2">
+	<a href="#" class="close" onclick ="about(3)"></a>
+				<div id = "page">
+
+				<img id="productDetailImg" img src="media/product.jpg" >
+				<div id = "imagePreviews">
+					<div class="wraper2">
+						<div class="zoom_area2">
+							<div class="preview2">
+								<img id ="whiteOvalPreview2" src="media/White-star-tee.png" alt="">
+							</div>
+						</div>
+					</div>	
+					<div id ="imageSelection">
+						<img class="alternateImage"  id = "alternateImage1" img src ="media/White-star-tee.png" onclick="alternateImage(this)" >
+						<img class="alternateImage"  id = "alternateImage2" img src ="media/White-star-close-up.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagWhite.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage4" img src ="media/WhiteStarLook1.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage5" img src ="media/WhiteStarLook2.jpg" onclick="alternateImage(this)">	
+							<div id = "disclaimer">
+									<p>
+										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
+									<p>
+									
+									£25.00 + Shipping: £3.00</p>																				
+
+
+							</div>
+					</div>				
+
+				<div id = "buttons">
+				<select id="select-size" onchange="choice1(this)">
+					<option value="1">Small</option>
+					<option value="2">Medium</option>
+					<option value="3">Large</option>
+					<option value="4">Extra Large</option>
+				</select>
+								
+				<button class="snipcart-add-item"
+				  data-item-id="Star Logo Tee (White/Black)"
+				  data-item-price="25.00"
+				  data-item-url="https://www.starcorpjp.com/"
+				  data-item-description="Star Logo Tee (White/Black)"
+				  data-item-image="media/White-star-tee.jpg"
+				  data-item-name="Star Logo Tee (White/Black)"
+				  data-item-custom1-name="Size"
+				  data-item-custom1-options="Small|Medium|Large|Extra Large"
+				  data-item-custom1-value="Small" onclick="showCart()" >
+				  Add to cart
+				</button>
+			</div>	
+				<img id="sizeGuide" img src="media/sizeGuide.jpg" >			
+				</div>
+
+
+			
+
+				
+			</div>
+			
+			</div>	
+			<div class = "pageContainer" id="pageContainer3">
+	<a href="#" class="close" onclick ="about(3)"></a>
+				<div id = "page">
+
+				<img id="productDetailImg" img src="media/product.jpg" >
+				<div id = "imagePreviews">
+					<div class="wraper3">
+						<div class="zoom_area3">
+							<div class="preview3">
+								<img id ="whiteOvalPreview3" src="media/Navy-oval-tee.png" alt="">
+							</div>
+						</div>
+					</div>	
+					<div id ="imageSelection">
+						<img class="alternateImage"  id = "alternateImage1" img src ="media/Navy-oval-tee.png" onclick="alternateImage(this)" >
+						<img class="alternateImage"  id = "alternateImage2" img src ="media/Navy-oval-close-up.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagNavy.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage4" img src ="media/NavyOvalLook1.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage5" img src ="media/NavyOvalLook2.jpg" onclick="alternateImage(this)">	
+							<div id = "disclaimer">
+									<p>
+										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
+									<p>
+									
+									£25.00 + Shipping: £3.00</p>																				
+
+
+							</div>
+					</div>				
+
+				<div id = "buttons">
+				<select id="select-size" onchange="choice1(this)">
+					<option value="1">Small</option>
+					<option value="2">Medium</option>
+					<option value="3">Large</option>
+					<option value="4">Extra Large</option>
+				</select>
+								
+				<button class="snipcart-add-item"
+				  data-item-id="Oval Logo Tee (Navy/White)"
+				  data-item-price="25.00"
+				  data-item-url="https://www.starcorpjp.com/"
+				  data-item-description="Oval Logo Tee (Navy/White)"
+				  data-item-image="media/Navy-oval-tee.jpg"
+				  data-item-name="Oval Logo Tee (Navy/White)"
+				  data-item-custom1-name="Size"
+				  data-item-custom1-options="Small|Medium|Large|Extra Large"
+				  data-item-custom1-value="Small" onclick="showCart()" >
+				  Add to cart
+				</button>
+			</div>	
+				<img id="sizeGuide" img src="media/sizeGuide.jpg" >			
+				</div>
+
+
+			
+
+				
+			</div>
+			
+			</div>		
+			<div class = "pageContainer" id="pageContainer4">
+	<a href="#" class="close" onclick ="about(3)"></a>
+				<div id = "page">
+
+				<img id="productDetailImg" img src="media/product.jpg" >
+				<div id = "imagePreviews">
+					<div class="wraper4">
+						<div class="zoom_area4">
+							<div class="preview4">
+								<img id ="whiteOvalPreview4" src="media/Navy-star-tee.png" alt="">
+							</div>
+						</div>
+					</div>	
+					<div id ="imageSelection">
+						<img class="alternateImage"  id = "alternateImage1" img src ="media/Navy-star-tee.png" onclick="alternateImage(this)" >
+						<img class="alternateImage"  id = "alternateImage2" img src ="media/Navy-star-close-up.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagNavy.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage4" img src ="media/NavyStarLook1.jpg" onclick="alternateImage(this)">
+						<img class="alternateImage"  id = "alternateImage5" img src ="media/NavyStarLook2.jpg" onclick="alternateImage(this)">	
+							<div id = "disclaimer">
+									<p>
+										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
+									<p>
+									
+									£25.00 + Shipping: £3.00</p>																				
+
+
+							</div>
+					</div>				
+
+				<div id = "buttons">
+				<select id="select-size" onchange="choice1(this)">
+					<option value="1">Small</option>
+					<option value="2">Medium</option>
+					<option value="3">Large</option>
+					<option value="4">Extra Large</option>
+				</select>
+								
+				<button class="snipcart-add-item"
+				  data-item-id="Star Logo Tee (Navy/White)"
+				  data-item-price="25.00"
+				  data-item-url="https://www.starcorpjp.com/"
+				  data-item-description="Star Logo Tee (Navy/White)"
+				  data-item-image="media/Navy-star-tee.jpg"
+				  data-item-name="Star Logo Tee (Navy/White)"
+				  data-item-custom1-name="Size"
+				  data-item-custom1-options="Small|Medium|Large|Extra Large"
+				  data-item-custom1-value="Small" onclick="showCart()" >
+				  Add to cart
+				</button>
+			</div>	
+				<img id="sizeGuide" img src="media/sizeGuide.jpg" >			
+				</div>
+
+
+			
+
+				
+			</div>
+			
+			</div>	
 
 <div id = "aboutContainer" ">
 
@@ -796,6 +1068,8 @@ and (orientation:landscape){
 <p>	Star Look book</p>
 
 <p>Art direction by Shimpei Mikami</p>
+<p>Photography by Jesse Crankson</p>
+<p>+</p>
 <p>Photography by Louis Flashman</p>
 </div>
 </div>
@@ -888,9 +1162,7 @@ and (orientation:landscape){
 	
 	</div>
 
-<div id = "splashContainer"  onclick ="splash()">
-	<img id ="splash" img src ="media/splash.png" onclick="PlayMusic('music');PlayVideo('backgroundVideo');">
-</div>
+
 
 		<div id ="checkoutSummary">
 			<button class="snipcart-checkout">
@@ -904,273 +1176,10 @@ and (orientation:landscape){
 				
 		</div>
 
-		<div id = "backgroundContainer">
 
 
-			<video id ="backgroundVideo" playsinline muted loop>
-				<source src="media/1440.m4v" type="video/mp4">
-			</video>
-
-			<img id ="logo" img src ="media/stargifFinished.gif">
-		</div>	
-		<div id ="productContainer">
-			<div id = "page">
-
-				<img id = "shirtPreview" img src ="media/White-oval-tee.png" onclick="product(1)">
-
-				<img id = "shirtPreview" img src ="media/White-star-tee.png" onclick="product(2)">
-
-				<img id = "shirtPreview" img src ="media/Navy-oval-tee.png" onclick="product(3)">
-
-				<img id = "shirtPreview" img src ="media/Navy-star-tee.png" onclick="product(4)">
-
-			</div>
-		</div>
-
-			<div class = "pageContainer" id="pageContainer1">
-	<a href="#" class="close" onclick ="about(3)"></a>
-				<div id = "page">
-
-				<img id="productDetailImg" img src="media/product.jpg" >
-				<div id = "imagePreviews">
-					<div class="wraper">
-						<div class="zoom_area">
-							<div class="preview">
-								<img id ="whiteOvalPreview1" src="media/White-oval-tee.png" alt="">
-							</div>
-						</div>
-					</div>	
-					<div id ="imageSelection">
-						<img class="alternateImage"  id = "alternateImage1" img src ="media/White-oval-tee.png" onclick="alternateImage(this)" >
-						<img class="alternateImage"  id = "alternateImage2" img src ="media/White-oval-close-up.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagWhite.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage4" img src ="media/WhiteOvalLook1.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage5" img src ="media/WhiteOvalLook2.jpg" onclick="alternateImage(this)">	
-							<div id = "disclaimer">
-									<p >
-										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
-									<p >
-										£25.00 + Shipping: £3.00</p>																				
-
-
-							</div>
-					</div>				
-
-				<div id = "buttons">
-				<select id="select-size" onchange="choice1(this)">
-					<option value="1">Small</option>
-					<option value="2">Medium</option>
-					<option value="3">Large</option>
-					<option value="4">Extra Large</option>
-				</select>
-								
-				<button class="snipcart-add-item"
-				  data-item-id="Oval Logo Tee (White/Black)"
-				  data-item-price="25.00"
-				  data-item-url="https://portfolio-matthewkelly-do2qs.ondigitalocean.app/"
-				  data-item-description="Oval Logo Tee (White/Black)"
-				  data-item-image="media/White-oval-tee.jpg"
-				  data-item-name="Oval Logo Tee (White/Black)"
-				  data-item-custom1-name="Size"
-				  data-item-custom1-options="Small|Medium|Large|Extra Large"
-				  data-item-custom1-value="Small" onclick="showCart()" >
-				  Add to cart
-				</button>
-			</div>	
-				<img id="sizeGuide" img src="media/sizeGuide.jpg" >			
-				</div>
-
-
-			
 
 				
-			</div>
-			
-			</div>
-
-			<div class = "pageContainer" id="pageContainer2">
-	<a href="#" class="close" onclick ="about(3)"></a>
-				<div id = "page">
-
-				<img id="productDetailImg" img src="media/product.jpg" >
-				<div id = "imagePreviews">
-					<div class="wraper2">
-						<div class="zoom_area2">
-							<div class="preview2">
-								<img id ="whiteOvalPreview2" src="media/White-star-tee.png" alt="">
-							</div>
-						</div>
-					</div>	
-					<div id ="imageSelection">
-						<img class="alternateImage"  id = "alternateImage1" img src ="media/White-star-tee.png" onclick="alternateImage(this)" >
-						<img class="alternateImage"  id = "alternateImage2" img src ="media/White-star-close-up.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagWhite.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage4" img src ="media/WhiteStarLook1.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage5" img src ="media/WhiteStarLook2.jpg" onclick="alternateImage(this)">	
-							<div id = "disclaimer">
-									<p>
-										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
-									<p>
-									
-									£25.00 + Shipping: £3.00</p>																				
-
-
-							</div>
-					</div>				
-
-				<div id = "buttons">
-				<select id="select-size" onchange="choice1(this)">
-					<option value="1">Small</option>
-					<option value="2">Medium</option>
-					<option value="3">Large</option>
-					<option value="4">Extra Large</option>
-				</select>
-								
-				<button class="snipcart-add-item"
-				  data-item-id="Star Logo Tee (White/Black)"
-				  data-item-price="25.00"
-				  data-item-url="https://portfolio-matthewkelly-do2qs.ondigitalocean.app/"
-				  data-item-description="Star Logo Tee (White/Black)"
-				  data-item-image="media/White-star-tee.jpg"
-				  data-item-name="Star Logo Tee (White/Black)"
-				  data-item-custom1-name="Size"
-				  data-item-custom1-options="Small|Medium|Large|Extra Large"
-				  data-item-custom1-value="Small" onclick="showCart()" >
-				  Add to cart
-				</button>
-			</div>	
-				<img id="sizeGuide" img src="media/sizeGuide.jpg" >			
-				</div>
-
-
-			
-
-				
-			</div>
-			
-			</div>	
-			<div class = "pageContainer" id="pageContainer3">
-	<a href="#" class="close" onclick ="about(3)"></a>
-				<div id = "page">
-
-				<img id="productDetailImg" img src="media/product.jpg" >
-				<div id = "imagePreviews">
-					<div class="wraper3">
-						<div class="zoom_area3">
-							<div class="preview3">
-								<img id ="whiteOvalPreview3" src="media/Navy-oval-tee.png" alt="">
-							</div>
-						</div>
-					</div>	
-					<div id ="imageSelection">
-						<img class="alternateImage"  id = "alternateImage1" img src ="media/Navy-oval-tee.png" onclick="alternateImage(this)" >
-						<img class="alternateImage"  id = "alternateImage2" img src ="media/Navy-oval-close-up.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagNavy.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage4" img src ="media/NavyOvalLook1.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage5" img src ="media/NavyOvalLook2.jpg" onclick="alternateImage(this)">	
-							<div id = "disclaimer">
-									<p>
-										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
-									<p>
-									
-									£25.00 + Shipping: £3.00</p>																				
-
-
-							</div>
-					</div>				
-
-				<div id = "buttons">
-				<select id="select-size" onchange="choice1(this)">
-					<option value="1">Small</option>
-					<option value="2">Medium</option>
-					<option value="3">Large</option>
-					<option value="4">Extra Large</option>
-				</select>
-								
-				<button class="snipcart-add-item"
-				  data-item-id="Oval Logo Tee (Navy/White)"
-				  data-item-price="20.00"
-				  data-item-url="https://portfolio-matthewkelly-do2qs.ondigitalocean.app/"
-				  data-item-description="Oval Logo Tee (Navy/White)"
-				  data-item-image="media/Navy-oval-tee.jpg"
-				  data-item-name="Oval Logo Tee (Navy/White)"
-				  data-item-custom1-name="Size"
-				  data-item-custom1-options="Small|Medium|Large|Extra Large"
-				  data-item-custom1-value="Small" onclick="showCart()" >
-				  Add to cart
-				</button>
-			</div>	
-				<img id="sizeGuide" img src="media/sizeGuide.jpg" >			
-				</div>
-
-
-			
-
-				
-			</div>
-			
-			</div>		
-			<div class = "pageContainer" id="pageContainer4">
-	<a href="#" class="close" onclick ="about(3)"></a>
-				<div id = "page">
-
-				<img id="productDetailImg" img src="media/product.jpg" >
-				<div id = "imagePreviews">
-					<div class="wraper4">
-						<div class="zoom_area4">
-							<div class="preview4">
-								<img id ="whiteOvalPreview4" src="media/Navy-star-tee.png" alt="">
-							</div>
-						</div>
-					</div>	
-					<div id ="imageSelection">
-						<img class="alternateImage"  id = "alternateImage1" img src ="media/Navy-star-tee.png" onclick="alternateImage(this)" >
-						<img class="alternateImage"  id = "alternateImage2" img src ="media/Navy-star-close-up.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagNavy.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage4" img src ="media/NavyStarLook1.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage5" img src ="media/NavyStarLook2.jpg" onclick="alternateImage(this)">	
-							<div id = "disclaimer">
-									<p>
-										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
-									<p>
-									
-									£25.00 + Shipping: £3.00</p>																				
-
-
-							</div>
-					</div>				
-
-				<div id = "buttons">
-				<select id="select-size" onchange="choice1(this)">
-					<option value="1">Small</option>
-					<option value="2">Medium</option>
-					<option value="3">Large</option>
-					<option value="4">Extra Large</option>
-				</select>
-								
-				<button class="snipcart-add-item"
-				  data-item-id="Star Logo Tee (Navy/White)"
-				  data-item-price="20.00"
-				  data-item-url="https://portfolio-matthewkelly-do2qs.ondigitalocean.app/"
-				  data-item-description="Star Logo Tee (Navy/White)"
-				  data-item-image="media/Navy-star-tee.jpg"
-				  data-item-name="Star Logo Tee (Navy/White)"
-				  data-item-custom1-name="Size"
-				  data-item-custom1-options="Small|Medium|Large|Extra Large"
-				  data-item-custom1-value="Small" onclick="showCart()" >
-				  Add to cart
-				</button>
-			</div>	
-				<img id="sizeGuide" img src="media/sizeGuide.jpg" >			
-				</div>
-
-
-			
-
-				
-			</div>
-			
-			</div>					
 			
 			
 
