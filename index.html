@@ -794,8 +794,8 @@ and (orientation:landscape){
 	<source src="media/music.mp3"></source>
 </audio>
 <div id ="nav">
-	<img id ="aboutIcon" img src ="media/aboutIcon.png" onclick="about(1)">
-	<img id ="lookbookIcon" img src ="media/thumbnail_Look book icon.png" onclick="about(4)" >
+	<img class="lazy"  id ="aboutIcon" data-src ="media/aboutIcon.png" onclick="about(1)">
+	<img class="lazy"  id ="lookbookIcon" data-src ="media/thumbnail_Look book icon.png" onclick="about(4)" >
 
 </div>
 
@@ -964,7 +964,7 @@ and (orientation:landscape){
 		<div id = "backgroundContainer">
 
 
-			<video id ="backgroundVideo" playsinline muted loop>
+			<video  id ="backgroundVideo" playsinline muted loop>
 				<source src="media/1440.m4v" type="video/mp4">
 			</video>
 
@@ -1176,7 +1176,7 @@ and (orientation:landscape){
 					<div class="wraper4">
 						<div class="zoom_area4">
 							<div class="preview4">
-								<img class="lazy" id ="whiteOvalPreview4" src="media/Navy-star-tee.png" alt="">
+								<img class="lazy" id ="whiteOvalPreview4" data-src="media/Navy-star-tee.png" alt="">
 							</div>
 						</div>
 					</div>	
