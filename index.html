@@ -422,15 +422,53 @@
 	#imageSelection{
 		position: relative;
 	}
-	.alternateImage{
+	.alternateImage{1
 		background-color: white;
 		width: 10vw;
 		height: auto;
 		outline: 3px solid #ffffff;		
 	}
-	.alternateImage:hover {
+	.alternateImage1:hover {
 		opacity: 0.5;
 	}
+	.alternateImage2{
+		background-color: white;
+		width: 10vw;
+		height: auto;
+		outline: 3px solid #ffffff;		
+	}
+	.alternateImage2:hover {
+		opacity: 0.5;
+	}
+	.alternateImage3{
+		background-color: white;
+		width: 10vw;
+		height: auto;
+		outline: 3px solid #ffffff;		
+	}
+	.alternateImage3:hover {
+		opacity: 0.5;
+	}
+	.alternateImage4{
+		background-color: white;
+		width: 10vw;
+		height: auto;
+		outline: 3px solid #ffffff;		
+	}
+	.alternateImage4:hover {
+		opacity: 0.5;
+	}
+	.alternateImage5{
+		background-color: white;
+		width: 10vw;
+		height: auto;
+		outline: 3px solid #ffffff;		
+	}
+	.alternateImage5:hover {
+		opacity: 0.5;
+	}
+
+	
 	#select-size{
 		position:relative;
 		height:100%;
@@ -654,10 +692,26 @@
 		right:unset;
 		float:none;
 	}
-	#alternateImage{
+	#alternateImage1{
 		width:10vw;
 	
 	}
+	#alternateImage2{
+		width:10vw;
+	
+	}
+	#alternateImage3{
+		width:10vw;
+	
+	}
+	#alternateImage4{
+		width:10vw;
+	
+	}
+	#alternateImage5{
+		width:10vw;
+	
+	}	
 	#gbIconContainer{
 		overflow: hidden;
 		left: 0;
@@ -735,14 +789,178 @@ and (orientation:landscape){
 
 	<body>
 <script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
-  <script async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script>
 <div id="snipcart" data-config-modal-style="side" data-api-key="NjI2MWQ0OGItODdhNC00NTI0LWE3MjUtMWZjZjdlNGIyMDdiNjM3NDQ4MDU2ODAwMDMzODI1" hidden></div>	
 <audio id = "music" autoplay loop>
 	<source src="media/music.mp3"></source>
 </audio>
+<div id ="nav">
+	<img id ="aboutIcon" img src ="media/aboutIcon.png" onclick="about(1)">
+	<img id ="lookbookIcon" img src ="media/thumbnail_Look book icon.png" onclick="about(4)" >
+
+</div>
+
+<div id = "aboutContainer" ">
+
+<a href="#" class="close" onclick ="about(2)"></a>
+	<div id ="aContainer">
+	<img class="lazy" id ="aboutHeader" data-src ="media/thumbnail_Star logo.png">
+	<div class ="aboutText">
+		<p align="left">I was born in a suburban area of Tokyo, being stuck in the concrete jungle boosted me to explore Tokyo more.  </p>
+		<p align="left">I was fascinated by the weirdly americanised Japanese subculture of ura-Harajuku. This fascination was aided by inspiration from what was happening around my generation ; violence in school, teenage suicide, hikikomori and post biker gang groups. These inspirations gave me a radical taste that later directed my interest towards the Japanese avant-garde movement from the 50’s ~ 70’s.</p>
+		<p align="left">While I was struggling to start creative work, I found ‘Star’ a short story by Yukio Mishima, about a popular young actor that struggles with fame and the anxieties that come with such a profession. The story reminded me of how ridiculously important it is to be seen in a good career and public image by others in Japanese society. Star’s logo is a homage to a cover of this story. I created Star for people to enjoy my satirical and ironic graphics.</p>
+
+			<div id ="Socials">
+			<img class="lazy" id ="instagramIcon" data-src = "media/instagram.png"</>
+			<a href="https://www.instagram.com/star___jp/"target="_blank" rel="noopener noreferrer">@star___jp </a>
+			<a href="https://www.instagram.com/shimpei_1102/"target="_blank" rel="noopener noreferrer">@shimpei_m1102</a>
+			<p>Email: starjapan42@gmail.com</p>
+			
+		</div>
+
+	</div>
+
+	<img class="lazy" id ="about" data-src ="media/thumbnail_About image.png">	
+	</div>
+
+</div>
+<div id = "lookBook" >
+
+
+<a href="#" class="close" onclick ="about(5)"
+    style ="top: 0;
+	right:0;
+
+    position: absolute;
+
+ "
+></a>
+<div id="icons">
+<div id = "gbIconContainer">
+<img class="lazy" id ="gbIcon" data-src = "media/gbIcon.jpeg" onclick="about(6)">
+<div id="credit">
+	<p>Game Boy look book </p>
+	<p>Art direction by Shimpei Mikami</p>
+	<p>Photography by Jesse Crankson</p>
+	<p>Styling by Louis Flashman</p>
+	</div>
+</div>
+<div id = "lbIconContainer">
+<img class="lazy" id ="lbIcon" data-src = "media/lb1.jpg" onclick="about(7)">	
+<div id="credit">
+<p>	Star Look book</p>
+
+<p>Art direction by Shimpei Mikami</p>
+<p>Photography by Jesse Crankson</p>
+<p>+</p>
+<p>Photography by Louis Flashman</p>
+
+</div>
+</div>
+
+
+</div>
+	<div id ="lbContainer">
+		<img class="lazy" id ="lbPic" data-src = "media/lb1.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb2.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb3.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb4.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb5.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb6.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb7.jpg">
+		<img class="lazy"  id ="lbPic" data-src = "media/lb8.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb9.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb10.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb11.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb12.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb13.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb14.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb15.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb16.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb17.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb18.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb35.jpg">		
+		<img class="lazy" id ="lbPic" data-src = "media/lb19.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb20.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb21.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb22.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb23.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb24.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb25.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb26.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb27.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb28.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb29.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb30.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb31.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb32.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb33.jpg">
+
+		<img class="lazy" id ="lbPic" data-src = "media/lb36.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb37.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb38.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb39.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb40.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb41.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb42.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb43.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb44.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb45.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb46.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb47.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb48.jpg">
+		<img class="lazy" id ="lbPic" data-src = "media/lb49.jpg">
+		
+	</div>
+	<div id ="gbContainer" style="background-color:black;">
+		<img class="lazy" id ="gbPic" data-src = "media/gb1.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb2.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb3.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb4.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb5.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb6.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb7.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb8.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb9.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb10.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb11.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb12.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb13.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb14.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb15.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb16.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb17.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb18.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb19.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb20.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb21.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb22.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb23.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb24.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb25.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb26.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb27.PNG">
+		<img class="lazy" id ="gbPic" data-src = "media/gb28.PNG">
+
+	</div>
+	
+	</div>
+
 <div id = "splashContainer"  onclick ="splash()">
 	<img id ="splash" img src ="media/splash.png" onclick="PlayMusic('music');PlayVideo('backgroundVideo');">
 </div>
+
+		<div id ="checkoutSummary">
+			<button class="snipcart-checkout">
+				<img id="cartIcon" img src = "media/shopping-cart.svg" style="left:21%;position:relative;display:block;">
+				<span class="snipcart-items-count">
+						
+				</span>
+			</button>
+				
+				
+				
+		</div>
+
 		<div id = "backgroundContainer">
 
 
@@ -752,7 +970,6 @@ and (orientation:landscape){
 
 			<img id ="logo" img src ="media/stargifFinished.gif">
 		</div>	
-
 		<div id ="productContainer">
 			<div id = "page">
 
@@ -766,32 +983,26 @@ and (orientation:landscape){
 
 			</div>
 		</div>
-		
-<div id ="nav">
-	<img id ="aboutIcon" img src ="media/aboutIcon.png" onclick="about(1)">
-	<img id ="lookbookIcon" img src ="media/thumbnail_Look book icon.png" onclick="about(4)" >
-
-</div>
 
 			<div class = "pageContainer" id="pageContainer1">
 	<a href="#" class="close" onclick ="about(3)"></a>
 				<div id = "page">
 
-				<img id="productDetailImg" img src="media/product.jpg" >
+				<img class="lazy" id="productDetailImg" data-src="media/product.jpg" >
 				<div id = "imagePreviews">
 					<div class="wraper">
 						<div class="zoom_area">
 							<div class="preview">
-								<img id ="whiteOvalPreview1" src="media/White-oval-tee.png" alt="">
+								<img class="lazy" id ="whiteOvalPreview1" data-src="media/White-oval-tee.png" alt="">
 							</div>
 						</div>
 					</div>	
 					<div id ="imageSelection">
-						<img class="alternateImage"  id = "alternateImage1" img src ="media/White-oval-tee.png" onclick="alternateImage(this)" >
-						<img class="alternateImage"  id = "alternateImage2" img src ="media/White-oval-close-up.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagWhite.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage4" img src ="media/WhiteOvalLook1.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage5" img src ="media/WhiteOvalLook2.jpg" onclick="alternateImage(this)">	
+						<img class="lazy"   id = "alternateImage1" data-src ="media/White-oval-tee.png" onclick="alternateImage(this)" >
+						<img class="lazy"   id = "alternateImage2" data-src ="media/White-oval-close-up.jpg" onclick="alternateImage(this)">
+						<img class="lazy"   id = "alternateImage3" data-src ="media/tagWhite.jpg" onclick="alternateImage(this)">
+						<img class="lazy"   id = "alternateImage4" data-src ="media/WhiteOvalLook1.jpg" onclick="alternateImage(this)">
+						<img class="lazy"   id = "alternateImage5" data-src ="media/WhiteOvalLook2.jpg" onclick="alternateImage(this)">	
 							<div id = "disclaimer">
 									<p >
 										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
@@ -823,7 +1034,7 @@ and (orientation:landscape){
 				  Add to cart
 				</button>
 			</div>	
-				<img id="sizeGuide" img src="media/sizeGuide.jpg" >			
+				<img class="lazy" id="sizeGuide" data-src="media/sizeGuide.jpg" >			
 				</div>
 
 
@@ -838,21 +1049,21 @@ and (orientation:landscape){
 	<a href="#" class="close" onclick ="about(3)"></a>
 				<div id = "page">
 
-				<img id="productDetailImg" img src="media/product.jpg" >
+				<img class="lazy" id="productDetailImg" data-src="media/product.jpg" >
 				<div id = "imagePreviews">
 					<div class="wraper2">
 						<div class="zoom_area2">
 							<div class="preview2">
-								<img id ="whiteOvalPreview2" src="media/White-star-tee.png" alt="">
+								<img class="lazy" id ="whiteOvalPreview2" src="media/White-star-tee.png" alt="">
 							</div>
 						</div>
 					</div>	
 					<div id ="imageSelection">
-						<img class="alternateImage"  id = "alternateImage1" img src ="media/White-star-tee.png" onclick="alternateImage(this)" >
-						<img class="alternateImage"  id = "alternateImage2" img src ="media/White-star-close-up.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagWhite.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage4" img src ="media/WhiteStarLook1.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage5" img src ="media/WhiteStarLook2.jpg" onclick="alternateImage(this)">	
+						<img class="lazy"   id = "alternateImage1" data-src ="media/White-star-tee.png" onclick="alternateImage(this)" >
+						<img class="lazy"   id = "alternateImage2" data-src ="media/White-star-close-up.jpg" onclick="alternateImage(this)">
+						<img class="lazy"   id = "alternateImage3" data-src ="media/tagWhite.jpg" onclick="alternateImage(this)">
+						<img class="lazy"   id = "alternateImage4" data-src ="media/WhiteStarLook1.jpg" onclick="alternateImage(this)">
+						<img class="lazy"   id = "alternateImage5" data-src ="media/WhiteStarLook2.jpg" onclick="alternateImage(this)">	
 							<div id = "disclaimer">
 									<p>
 										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
@@ -885,7 +1096,7 @@ and (orientation:landscape){
 				  Add to cart
 				</button>
 			</div>	
-				<img id="sizeGuide" img src="media/sizeGuide.jpg" >			
+				<img class="lazy" id="sizeGuide" data-src="media/sizeGuide.jpg" >			
 				</div>
 
 
@@ -899,21 +1110,21 @@ and (orientation:landscape){
 	<a href="#" class="close" onclick ="about(3)"></a>
 				<div id = "page">
 
-				<img id="productDetailImg" img src="media/product.jpg" >
+				<img class="lazy" id="productDetailImg" data-src="media/product.jpg" >
 				<div id = "imagePreviews">
 					<div class="wraper3">
 						<div class="zoom_area3">
 							<div class="preview3">
-								<img id ="whiteOvalPreview3" src="media/Navy-oval-tee.png" alt="">
+								<img class="lazy" id ="whiteOvalPreview3" src="media/Navy-oval-tee.png" alt="">
 							</div>
 						</div>
 					</div>	
 					<div id ="imageSelection">
-						<img class="alternateImage"  id = "alternateImage1" img src ="media/Navy-oval-tee.png" onclick="alternateImage(this)" >
-						<img class="alternateImage"  id = "alternateImage2" img src ="media/Navy-oval-close-up.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagNavy.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage4" img src ="media/NavyOvalLook1.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage5" img src ="media/NavyOvalLook2.jpg" onclick="alternateImage(this)">	
+						<img class="lazy"   id = "alternateImage1" data-src ="media/Navy-oval-tee.png" onclick="alternateImage(this)" >
+						<img class="lazy"   id = "alternateImage2" data-src ="media/Navy-oval-close-up.jpg" onclick="alternateImage(this)">
+						<img class="lazy"   id = "alternateImage3" data-src ="media/tagNavy.jpg" onclick="alternateImage(this)">
+						<img class="lazy"   id = "alternateImage4" data-src ="media/NavyOvalLook1.jpg" onclick="alternateImage(this)">
+						<img class="lazy"   id = "alternateImage5" data-src ="media/NavyOvalLook2.jpg" onclick="alternateImage(this)">	
 							<div id = "disclaimer">
 									<p>
 										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
@@ -946,7 +1157,7 @@ and (orientation:landscape){
 				  Add to cart
 				</button>
 			</div>	
-				<img id="sizeGuide" img src="media/sizeGuide.jpg" >			
+				<img class="lazy" id="sizeGuide" data-src="media/sizeGuide.jpg" >			
 				</div>
 
 
@@ -960,21 +1171,21 @@ and (orientation:landscape){
 	<a href="#" class="close" onclick ="about(3)"></a>
 				<div id = "page">
 
-				<img id="productDetailImg" img src="media/product.jpg" >
+				<img class="lazy" id="productDetailImg" data-src="media/product.jpg" >
 				<div id = "imagePreviews">
 					<div class="wraper4">
 						<div class="zoom_area4">
 							<div class="preview4">
-								<img id ="whiteOvalPreview4" src="media/Navy-star-tee.png" alt="">
+								<img class="lazy" id ="whiteOvalPreview4" src="media/Navy-star-tee.png" alt="">
 							</div>
 						</div>
 					</div>	
 					<div id ="imageSelection">
-						<img class="alternateImage"  id = "alternateImage1" img src ="media/Navy-star-tee.png" onclick="alternateImage(this)" >
-						<img class="alternateImage"  id = "alternateImage2" img src ="media/Navy-star-close-up.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage3" img src ="media/tagNavy.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage4" img src ="media/NavyStarLook1.jpg" onclick="alternateImage(this)">
-						<img class="alternateImage"  id = "alternateImage5" img src ="media/NavyStarLook2.jpg" onclick="alternateImage(this)">	
+						<img class="lazy"   id = "alternateImage1" data-src ="media/Navy-star-tee.png" onclick="alternateImage(this)" >
+						<img class="lazy"   id = "alternateImage2" data-src ="media/Navy-star-close-up.jpg" onclick="alternateImage(this)">
+						<img class="lazy"   id = "alternateImage3" data-src ="media/tagNavy.jpg" onclick="alternateImage(this)">
+						<img class="lazy"   id = "alternateImage4" data-src ="media/NavyStarLook1.jpg" onclick="alternateImage(this)">
+						<img class="lazy"   id = "alternateImage5" data-src ="media/NavyStarLook2.jpg" onclick="alternateImage(this)">	
 							<div id = "disclaimer">
 									<p>
 										★This tee has been individually hand printed by me. Due to this process each print may vary. Please make sure that you are okay with this before you purchase.</p>
@@ -1007,7 +1218,7 @@ and (orientation:landscape){
 				  Add to cart
 				</button>
 			</div>	
-				<img id="sizeGuide" img src="media/sizeGuide.jpg" >			
+				<img class="lazy" id="sizeGuide" data-src="media/sizeGuide.jpg" >			
 				</div>
 
 
@@ -1016,171 +1227,7 @@ and (orientation:landscape){
 				
 			</div>
 			
-			</div>	
-
-<div id = "aboutContainer" ">
-
-<a href="#" class="close" onclick ="about(2)"></a>
-	<div id ="aContainer">
-	<img id ="aboutHeader" img src ="media/thumbnail_Star logo.png">
-	<div class ="aboutText">
-		<p align="left">I was born in a suburban area of Tokyo, being stuck in the concrete jungle boosted me to explore Tokyo more.  </p>
-		<p align="left">I was fascinated by the weirdly americanised Japanese subculture of ura-Harajuku. This fascination was aided by inspiration from what was happening around my generation ; violence in school, teenage suicide, hikikomori and post biker gang groups. These inspirations gave me a radical taste that later directed my interest towards the Japanese avant-garde movement from the 50’s ~ 70’s.</p>
-		<p align="left">While I was struggling to start creative work, I found ‘Star’ a short story by Yukio Mishima, about a popular young actor that struggles with fame and the anxieties that come with such a profession. The story reminded me of how ridiculously important it is to be seen in a good career and public image by others in Japanese society. Star’s logo is a homage to a cover of this story. I created Star for people to enjoy my satirical and ironic graphics.</p>
-
-			<div id ="Socials">
-			<img id ="instagramIcon" img src = "media/instagram.png"</>
-			<a href="https://www.instagram.com/star___jp/"target="_blank" rel="noopener noreferrer">@star___jp </a>
-			<a href="https://www.instagram.com/shimpei_1102/"target="_blank" rel="noopener noreferrer">@shimpei_m1102</a>
-			<p>Email: starjapan42@gmail.com</p>
-			
-		</div>
-
-	</div>
-
-	<img id ="about" img src ="media/thumbnail_About image.png">	
-	</div>
-
-</div>
-<div id = "lookBook" >
-
-
-<a href="#" class="close" onclick ="about(5)"
-    style ="top: 0;
-	right:0;
-
-    position: absolute;
-
- "
-></a>
-<div id="icons">
-<div id = "gbIconContainer">
-<img id ="gbIcon" src = "media/gbIcon.jpeg" onclick="about(6)">
-<div id="credit">
-	<p>Game Boy look book </p>
-	<p>Art direction by Shimpei Mikami</p>
-	<p>Photography by Jesse Crankson</p>
-	<p>Styling by Louis Flashman</p>
-	</div>
-</div>
-<div id = "lbIconContainer">
-<img id ="lbIcon" src = "media/lb1.jpg" onclick="about(7)">	
-<div id="credit">
-<p>	Star Look book</p>
-
-<p>Art direction by Shimpei Mikami</p>
-<p>Photography by Jesse Crankson</p>
-<p>+</p>
-<p>Photography by Louis Flashman</p>
-</div>
-</div>
-
-
-</div>
-	<div id ="lbContainer">
-		<img id ="lbPic" src = "media/lb1.jpg">
-		<img id ="lbPic" src = "media/lb2.JPG">
-		<img id ="lbPic" src = "media/lb3.jpg">
-		<img id ="lbPic" src = "media/lb4.jpg">
-		<img id ="lbPic" src = "media/lb5.jpg">
-		<img id ="lbPic" src = "media/lb6.jpg">
-		<img id ="lbPic" src = "media/lb7.jpg">
-		<img id ="lbPic" src = "media/lb8.jpg">
-		<img id ="lbPic" src = "media/lb9.JPG">
-		<img id ="lbPic" src = "media/lb10.jpg">
-		<img id ="lbPic" src = "media/lb11.JPG">
-		<img id ="lbPic" src = "media/lb12.jpg">
-		<img id ="lbPic" src = "media/lb13.JPG">
-		<img id ="lbPic" src = "media/lb14.JPG">
-		<img id ="lbPic" src = "media/lb15.jpg">
-		<img id ="lbPic" src = "media/lb16.jpg">
-		<img id ="lbPic" src = "media/lb17.JPG">
-		<img id ="lbPic" src = "media/lb18.jpg">
-		<img id ="lbPic" src = "media/lb35.jpg">		
-		<img id ="lbPic" src = "media/lb19.JPG">
-		<img id ="lbPic" src = "media/lb20.jpg">
-		<img id ="lbPic" src = "media/lb21.jpg">
-		<img id ="lbPic" src = "media/lb22.jpg">
-		<img id ="lbPic" src = "media/lb23.jpg">
-		<img id ="lbPic" src = "media/lb24.JPG">
-		<img id ="lbPic" src = "media/lb25.JPG">
-		<img id ="lbPic" src = "media/lb26.jpg">
-		<img id ="lbPic" src = "media/lb27.jpg">
-		<img id ="lbPic" src = "media/lb28.jpg">
-		<img id ="lbPic" src = "media/lb29.jpg">
-		<img id ="lbPic" src = "media/lb30.jpg">
-		<img id ="lbPic" src = "media/lb31.jpg">
-		<img id ="lbPic" src = "media/lb32.jpg">
-		<img id ="lbPic" src = "media/lb33.jpg">
-
-		<img id ="lbPic" src = "media/lb36.jpg">
-		<img id ="lbPic" src = "media/lb37.jpg">
-		<img id ="lbPic" src = "media/lb38.jpg">
-		<img id ="lbPic" src = "media/lb39.jpg">
-		<img id ="lbPic" src = "media/lb40.jpg">
-		<img id ="lbPic" src = "media/lb41.jpg">
-		<img id ="lbPic" src = "media/lb42.jpg">
-		<img id ="lbPic" src = "media/lb43.jpg">
-		<img id ="lbPic" src = "media/lb44.jpg">
-		<img id ="lbPic" src = "media/lb45.jpg">
-		<img id ="lbPic" src = "media/lb46.jpg">
-		<img id ="lbPic" src = "media/lb47.jpg">
-		<img id ="lbPic" src = "media/lb48.jpg">
-		<img id ="lbPic" src = "media/lb49.jpg">
-		
-	</div>
-	<div id ="gbContainer" style="background-color:black;">
-		<img id ="gbPic" src = "media/gb1.PNG">
-		<img id ="gbPic" src = "media/gb2.PNG">
-		<img id ="gbPic" src = "media/gb3.PNG">
-		<img id ="gbPic" src = "media/gb4.PNG">
-		<img id ="gbPic" src = "media/gb5.PNG">
-		<img id ="gbPic" src = "media/gb6.PNG">
-		<img id ="gbPic" src = "media/gb7.PNG">
-		<img id ="gbPic" src = "media/gb8.PNG">
-		<img id ="gbPic" src = "media/gb9.PNG">
-		<img id ="gbPic" src = "media/gb10.PNG">
-		<img id ="gbPic" src = "media/gb11.PNG">
-		<img id ="gbPic" src = "media/gb12.PNG">
-		<img id ="gbPic" src = "media/gb13.PNG">
-		<img id ="gbPic" src = "media/gb14.PNG">
-		<img id ="gbPic" src = "media/gb15.PNG">
-		<img id ="gbPic" src = "media/gb16.PNG">
-		<img id ="gbPic" src = "media/gb17.PNG">
-		<img id ="gbPic" src = "media/gb18.PNG">
-		<img id ="gbPic" src = "media/gb19.PNG">
-		<img id ="gbPic" src = "media/gb20.PNG">
-		<img id ="gbPic" src = "media/gb21.PNG">
-		<img id ="gbPic" src = "media/gb22.PNG">
-		<img id ="gbPic" src = "media/gb23.PNG">
-		<img id ="gbPic" src = "media/gb24.PNG">
-		<img id ="gbPic" src = "media/gb25.PNG">
-		<img id ="gbPic" src = "media/gb26.PNG">
-		<img id ="gbPic" src = "media/gb27.PNG">
-		<img id ="gbPic" src = "media/gb28.PNG">
-
-	</div>
-	
-	</div>
-
-
-
-		<div id ="checkoutSummary">
-			<button class="snipcart-checkout">
-				<img id="cartIcon" img src = "media/shopping-cart.svg" style="left:21%;position:relative;display:block;">
-				<span class="snipcart-items-count">
-						
-				</span>
-			</button>
-				
-				
-				
-		</div>
-
-
-
-
-				
+			</div>					
 			
 			
 
@@ -1412,5 +1459,54 @@ if(document.getElementById("pageContainer4").style.display==="block")
 }
 
 }
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages;    
+
+  if ("IntersectionObserver" in window) {
+    lazyloadImages = document.querySelectorAll(".lazy");
+    var imageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var image = entry.target;
+          image.src = image.dataset.src;
+          image.classList.remove("lazy");
+          imageObserver.unobserve(image);
+        }
+      });
+    });
+
+    lazyloadImages.forEach(function(image) {
+      imageObserver.observe(image);
+    });
+  } else {  
+    var lazyloadThrottleTimeout;
+    lazyloadImages = document.querySelectorAll(".lazy");
+    
+    function lazyload () {
+      if(lazyloadThrottleTimeout) {
+        clearTimeout(lazyloadThrottleTimeout);
+      }    
+
+      lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazy');
+            }
+        });
+        if(lazyloadImages.length == 0) { 
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+      }, 20);
+    }
+
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+  }
+})
 	</script>
 </html>
